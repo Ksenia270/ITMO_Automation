@@ -1,32 +1,33 @@
-a=6
-b=5
-if a>=b: print(a)
-else: print(b)
+def arbitrary_number(number_1,number_2):
+ if number_1>=number_2: print(number_1)
+ else: print(number_2)
+arbitrary_number(135,136)
 
 
-a=140
-b=5
-if (a-b)==135: print("YES")
-else: print("NO")
+def arbitrary_number(number_1,number_2):
+ if (number_1-number_2)==135: print("YES")
+ else: print("NO")
+arbitrary_number(135,1)
 
-a=12
-if a==1 or a==2 or a==12:
+def season_of_the_year(month_number):
+ if month_number == 1 or month_number == 2 or month_number == 12:
     print("Зима")
-elif a in range(3,6):
+ elif month_number in range(3,6):
     print("Весна")
-elif a in range(6,9):
+ elif month_number in range(6,9):
     print("Лето")
-elif a in range(9,12):
+ elif month_number in range(9,12):
     print("Осень")
+season_of_the_year(1)
 
 
-a=62
-b=68
-c=64
-if a > 10 and b > 10 and c > 10:
+
+def arbitrary_number(number_1,number_2,number_3):
+ if number_1 > 10 and number_2 > 10 and number_3 > 10:
     print("yes")
-else:
+ else:
     print("no")
+arbitrary_number(67,15,20)
 
 
 
