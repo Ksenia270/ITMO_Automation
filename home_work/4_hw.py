@@ -4,20 +4,14 @@ class Rectangle:
         self.height = height
 
     def area(self):
-        """Метод для расчета площади прямоугольника."""
         return self.width * self.height
 
     def perimeter(self):
-        """Метод для расчета периметра прямоугольника."""
         return 2 * (self.width + self.height)
 
-
-# Создание объектов прямоугольников
 rectangle1 = Rectangle(4, 5)
 rectangle2 = Rectangle(7, 3)
 rectangle3 = Rectangle(6, 8)
-
-# Расчет площади и периметра для каждого прямоугольника
 rectangles = [rectangle1, rectangle2, rectangle3]
 
 for i, rect in enumerate(rectangles, start=1):
@@ -50,14 +44,36 @@ for i, rect in enumerate(rectangles, start=1):
             result = self.a - self.b
             print(f"Разность {self.a} и {self.b} равна: {result}")
 
-
-    # Пример использования класса
     math_operation = Math(10, 5)
 
-    math_operation.addition()  # 10 + 5
-    math_operation.subtraction()  # 10 - 5
-    math_operation.multiplication()  # 10 * 5
-    math_operation.division()  # 10 / 5
+    math_operation.addition()
+    math_operation.subtraction()
+    math_operation.multiplication()
+    math_operation.division()
 
 
-  
+class Button:
+    def __init__(self, text, button_type="Кнопка", locator=""):
+        self.text = text
+        self.button_type = button_type
+        self.locator = locator
+
+    def click(self):
+        return f"Клик по кнопке {self.text}"
+
+buttons = [
+    Button("Text Box"),
+    Button("Check Box"),
+    Button("Radio Button"),
+    Button("Web Tables"),
+    Button("Buttons"),
+    Button("Links"),
+    Button("Broken Links - Images"),
+    Button("Upload and Download"),
+    Button("Dynamic Properties"),
+]
+for button in buttons:
+    print(button.text)
+
+for button in buttons:
+    print(button.click())
